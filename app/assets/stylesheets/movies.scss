@@ -1,0 +1,24 @@
+// Place all the styles related to the movies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "colors";
+
+div.col-md-4 {
+ img {
+  height: auto;
+  max-width: 30%;
+  }
+  border: 5px solid $primary;
+}
+
+div.col-md-8 {
+  max-width: 100%;
+  table tr {
+    height:20%;
+  }
+}
+
+div.row {
+  border: 5px solid $secondary;
+  padding: 1%
+}

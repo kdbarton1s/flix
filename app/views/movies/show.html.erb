@@ -1,0 +1,30 @@
+
+<article class="show-page">
+  <header class="show-page">
+    <h1><%= @movie.title %></h1>
+  </header>
+  <%= image_for(@movie)  %>
+  <h3>Description</h3>
+  <p><%= @movie.description %></p>
+
+  <h3>Release Date</h3>
+  <p><%= @movie.released_on %></p>
+
+  <h3>Rating</h3>
+  <p><%= @movie.rating %></p>
+
+  <h3>Gross Earnings</h3>
+  <p><%= format_total_gross(@movie) %></p>
+
+  <h3>Director</h3>
+  <p><%= @movie.director %></p>
+
+  <h3>Cast</h3>
+  <p><%= @movie.cast %></p>
+
+  <h3>Duration</h3>
+  <p><%= @movie.duration %></p>
+
+</article>
+
+<%= link_to("Edit", edit_movie_path) %> | <%= link_to("Delete", movie_path, method: :delete, data: {confirm: "Are you sure?"}) %>

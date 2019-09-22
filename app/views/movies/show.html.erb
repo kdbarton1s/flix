@@ -27,4 +27,4 @@
 
 </article>
 
-<%= link_to("Edit", edit_movie_path) %> | <%= link_to("Delete", movie_path, method: :delete, data: {confirm: "Are you sure?"}) %> | <%= link_to("See #{pluralize(@movie.reviews.size, "review")}", movie_reviews_path(@movie)) %>
+<%= link_to("Edit", edit_movie_path) %> | <%= link_to("Delete", movie_path, method: :delete, data: {confirm: "Are you sure?"}) %> | <%= link_to("See #{pluralize(@movie.reviews.size, "review")}", movie_reviews_path(@movie)) %> | <%= link_to("Write Review", new_movie_review_path(@movie)) %>

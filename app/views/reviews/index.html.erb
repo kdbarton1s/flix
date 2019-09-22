@@ -1,5 +1,6 @@
 <h2>Reviews for <%= link_to(@movie.title, @movie) %></h2>
 
 <% @reviews.each do |review| %>
-  <p><%= pluralize(review.stars, "star") %> by <%= review.name %>: &quot;<%= review.comment %>&quot; (<%= time_ago_in_words(review.created_at) %> ago)</p>
+  <p><%= pluralize(review.stars, "star") %> by <%= review.name %>: &quot;<%= review.comment %>&quot; (<%= time_ago_in_words(review.created_at) %> ago)
+  <%= link_to("Edit", edit_movie_review_path(@movie, review)) %> | <%= link_to("Delete", movie_review_path(@movie, review), method: :delete) %></p>
 <% end  %>

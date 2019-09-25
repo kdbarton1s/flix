@@ -8,7 +8,6 @@ div.col-md-4 {
   height: auto;
   max-width: 30%;
   }
-  border: 5px solid $primary;
 }
 
 div.col-md-8 {
@@ -20,5 +19,17 @@ div.col-md-8 {
 
 div.row {
   border: 5px solid $secondary;
-  padding: 1%
+  padding: 1%;
+  margin: auto;
+  margin-bottom: 1%;
+}
+
+.movie-title-index {
+  margin-top: 0;
+}
+
+h2#home-page-h2 {
+  color: $secondary;
+  font-size: 2em;
+  font-weight: 700;
 }

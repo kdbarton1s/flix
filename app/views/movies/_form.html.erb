@@ -33,8 +33,9 @@
     <%= f.text_field :duration %>
   </p>
   <p>
-    <%= f.label :image_file_name %><br>
-    <%= f.text_field :image_file_name %>
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
+    <%= image_for(@movie) %>
   </p>
   <p><%= f.submit %> | <%= link_to("Cancel", movies_path) %></p>
 
